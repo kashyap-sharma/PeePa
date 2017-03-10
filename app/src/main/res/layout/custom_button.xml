@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_width="wrap_content">
+
+    <com.jlabs.peepaid.customcomponents.TextView_Black
+        android:id="@+id/imageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/premium"
+        android:textColor="#848484"
+        />
+
+
+    <com.jlabs.peepaid.customcomponents.TextViewModernM
+        android:id="@+id/praText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Trusted by us."
+        android:textColor="#848484"
+        />
+
+</LinearLayout>

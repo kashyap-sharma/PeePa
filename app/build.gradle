@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.jlabs.peepaid"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.google.android.gms:play-services:7.5.0'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:support-vector-drawable:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.android.support:support-v4:24.0.0'
+    compile 'com.android.support:cardview-v7:+'
+    // RecyclerView
+    androidTestCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    // volley
+    compile 'com.android.volley:volley:1.0.0'
+    // glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.pacioianu.david:ink-page-indicator:1.1.1'
+    compile 'ch.acra:acra:4.9.0-RC-2'
+    compile 'com.kyleduo.switchbutton:library:1.4.0'
+    compile 'xyz.sahildave:searchviewlayout:0.5'
+
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jaredrummler:animated-svg-view:1.0.0'
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+
+    // compile 'com.github.arimorty:floatingsearchview:1.1.2'
+
+}

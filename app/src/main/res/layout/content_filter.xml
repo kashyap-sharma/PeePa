@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:id="@+id/cw"
+        android:layout_marginBottom="7dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.jlabs.peepaid.customcomponents.TextViewModernM
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:padding="7dp"
+                android:id="@+id/trusted"
+                android:text=" Trusted / Verified"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/view"
+                android:layout_below="@+id/trusted"
+                android:background="#E1E1E1"
+                />
+            <include layout="@layout/custom_button"
+                android:layout_width="wrap_content"
+                android:id="@+id/trust"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/view"/>
+
+            <Switch
+                android:id="@+id/sb_code"
+                style="@style/SwitchButtonStyle"
+                android:layout_below="@+id/view"
+                android:padding="30dp"
+
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_below="@+id/cw"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.jlabs.peepaid.customcomponents.TextViewModernM
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:padding="7dp"
+                android:id="@+id/gen"
+                android:text="Gender Preferences"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/view1"
+                android:layout_below="@+id/gen"
+                android:background="#E1E1E1"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/view1"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                    <LinearLayout  android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:id="@+id/women"
+                        android:gravity="center"
+                        android:layout_width="wrap_content">
+
+                        <com.jlabs.peepaid.customcomponents.TextView_Black
+                            android:id="@+id/imageText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="50sp"
+                            android:text="@string/women"
+                            android:textColor="#fefefe"
+                            />
+
+
+                        <com.jlabs.peepaid.customcomponents.TextViewModernM
+                            android:id="@+id/praText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Women"
+                            android:textColor="#848484"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/wom_swi"
+                            android:clickable="false"
+                            android:layout_height="wrap_content" >
+
+                            </RadioButton>
+
+                    </LinearLayout>
+                    <LinearLayout  android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:id="@+id/men"
+                        android:layout_width="wrap_content">
+
+                        <com.jlabs.peepaid.customcomponents.TextView_Black
+                            android:id="@+id/imageText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="50sp"
+                            android:text="@string/men"
+                            android:textColor="#fefefe"
+                            />
+
+
+                        <com.jlabs.peepaid.customcomponents.TextViewModernM
+                            android:id="@+id/praText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Men"
+                            android:textColor="#848484"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/man_swi"
+                            android:clickable="false"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:id="@+id/both"
+                        android:gravity="center"
+                        android:layout_width="wrap_content">
+
+                        <com.jlabs.peepaid.customcomponents.TextView_Black
+                            android:id="@+id/imageText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="50sp"
+                            android:text="@string/both"
+                            android:textColor="#fefefe"
+                            />
+
+
+                        <com.jlabs.peepaid.customcomponents.TextViewModernM
+                            android:id="@+id/praText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Both"
+                            android:textColor="#848484"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/bot_swi"
+                            android:clickable="false"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <com.jlabs.peepaid.customcomponents.ButtonModarno
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/filterapply"
+        android:text="Apply"
+        android:textSize="25sp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

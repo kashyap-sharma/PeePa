@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/rewarded"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <com.jlabs.peepaid.customcomponents.TextViewModernM
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            android:text="Your Review..."/>
+       <EditText
+           android:layout_width="match_parent"
+           android:id="@+id/edittext"
+           android:padding="16dp"
+           android:layout_margin="16dp"
+           android:layout_height="wrap_content" />
+        <com.jlabs.peepaid.customcomponents.ButtonModarno
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Submit"
+            android:layout_margin="16dp"
+            android:textSize="22sp"
+            android:id="@+id/submit"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>

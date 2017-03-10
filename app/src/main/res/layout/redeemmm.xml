@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+<android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.Main22Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+
+                <com.jlabs.peepaid.customcomponents.TextViewModernM
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REDEEM"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+
+                    android:shadowRadius="2"
+                    android:padding="10dp"/>
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+        <!--<com.arlib.floatingsearchview.FloatingSearchView-->
+        <!--android:id="@+id/floating_search_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:background="#fff"-->
+        <!--app:floatingSearch_searchBarMarginLeft="10dp"-->
+        <!--app:floatingSearch_searchBarMarginTop="5dp"-->
+        <!--app:floatingSearch_searchBarMarginRight="10dp"-->
+        <!--app:floatingSearch_searchHint="Search..."-->
+        <!--app:floatingSearch_showSearchKey="false"-->
+        <!--app:floatingSearch_dismissOnOutsideTouch="true"-->
+        <!--app:floatingSearch_leftActionMode="showHamburger"-->
+        <!--app:floatingSearch_menu="@menu/menu_main"/>-->
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <com.jlabs.peepaid.customcomponents.TextView_White
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/stari"
+                android:textSize="70sp"
+                android:text="@string/star_in_circle"/>
+            <com.jlabs.peepaid.customcomponents.TextViewModernM
+                android:layout_width="wrap_content"
+                android:textSize="25sp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:id="@+id/point"
+                android:layout_toRightOf="@+id/stari"
+                android:layout_height="wrap_content"
+                android:text="90"/>
+            <TextView
+                android:layout_width="28dp"
+                android:background="#fefefe"
+                android:layout_below="@+id/point"
+                android:id="@+id/dand"
+                android:layout_toRightOf="@+id/stari"
+                android:layout_height="2dp"
+                />
+            <com.jlabs.peepaid.customcomponents.TextViewModernM
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POINTS"
+                android:layout_toRightOf="@+id/stari"
+                android:layout_below="@+id/dand"/>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main22"
+        app:menu="@menu/activity_main22_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:id="@+id/rl"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/recharge_back">
+            <AutoCompleteTextView
+                android:layout_width="fill_parent"
+
+
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+
+
+
+                android:hint="+919711940752"
+                android:textSize="12sp"
+
+
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/img"
+                android:id="@+id/auto"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="10dp"
+                android:id="@+id/img"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/actionbar_back"/>
+
+        </RelativeLayout>
+            <CheckBox
+                android:layout_below="@+id/rl"
+                android:layout_width="wrap_content"
+               android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:text="Prepaid"/>
+            <CheckBox
+                android:layout_below="@+id/rl"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:text="Postpaid"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="8dp"
+
+            android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:weightSum="1"
+               android:id="@+id/ll"
+               android:gravity="center_vertical"
+               android:orientation="horizontal">
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="7dp"
+                   android:id="@+id/rl11"
+                   android:layout_weight=".5"
+                   android:paddingTop="8dp"
+                   android:paddingBottom="8dp"
+                   android:gravity="center_vertical"
+                   android:background="@drawable/recharge_back">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/sp2"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="7dp"
+                   android:layout_weight=".5"
+                   android:id="@+id/rl1"
+                   android:paddingTop="8dp"
+                   android:paddingBottom="8dp"
+                   android:gravity="center_vertical"
+                   android:background="@drawable/recharge_back">
+                   <Spinner
+                       android:layout_width="match_parent"
+                       android:id="@+id/sp"
+                       android:layout_height="wrap_content">
+
+                   </Spinner>
+
+               </RelativeLayout>
+           </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_below="@+id/ll"
+
+
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/recharge_back">
+               <Spinner
+                   android:layout_width="match_parent"
+                   android:id="@+id/sp1"
+                   android:layout_height="wrap_content">
+
+               </Spinner>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    </ScrollView>
+    <com.jlabs.peepaid.customcomponents.ButtonModarno
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Process Recharge"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

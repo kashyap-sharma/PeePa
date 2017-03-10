@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:id="@+id/first"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <com.skyfishjy.library.RippleBackground
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/content"
+            app:rb_color="#aadcf6"
+            app:rb_radius="15dp"
+            app:rb_rippleAmount="1"
+            app:rb_duration="2000"
+            app:rb_scale="6"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <com.jlabs.peepaid.customcomponents.TextView_Black
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="60sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:id="@+id/loc_ico"
+                android:text="@string/locat"/>
+        </com.skyfishjy.library.RippleBackground>
+        <com.jlabs.peepaid.customcomponents.TextViewModernM
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_below="@+id/loc_ico"
+            android:text="You must be within 15m range to activate and earn points."
+            android:layout_height="wrap_content" />
+
+        <com.jlabs.peepaid.customcomponents.ButtonModarno
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTIVATE"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/activate"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:padding="20dp"
+            android:id="@+id/not_there"
+            android:visibility="gone"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/notthere"
+               android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Not there yet?"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/notthere"
+                android:layout_height="20dp"
+                android:textSize="10sp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/get_there"
+                android:text="Get there!"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#ffffff"
+        android:id="@+id/rewarded"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="center">
+        <com.jlabs.peepaid.customcomponents.TextViewModernM
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            android:text="Thank You.\n Points Rewarded"/>
+        <com.jlabs.peepaid.customcomponents.TextView_Black
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:textSize="70sp"
+            android:layout_margin="15dp"
+            android:background="@drawable/locat_back1"
+            android:gravity="center"
+            android:text="@string/check"/>
+
+    </LinearLayout>
+
+</LinearLayout>

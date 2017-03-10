@@ -1,0 +1,23 @@
+<com.skyfishjy.library.RippleBackground
+    android:layout_width="180dp"
+    android:layout_height="180dp"
+    android:id="@+id/content"
+    app:rb_color="#aadcf6"
+    app:rb_radius="15dp"
+    app:rb_rippleAmount="1"
+    app:rb_duration="2000"
+    app:rb_scale="6"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jlabs.peepaid.customcomponents.TextView_Black
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="60sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:id="@+id/loc_ico"
+        android:text="@string/locat"/>
+</com.skyfishjy.library.RippleBackground>

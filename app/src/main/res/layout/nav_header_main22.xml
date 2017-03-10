@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.jlabs.peepaid.Rounded.RoundedImageView
+        android:layout_width="80dp"
+        android:src="@drawable/view"
+        android:layout_margin="10dp"
+
+        android:paddingBottom="5dp"
+        android:id="@+id/pic"
+        android:layout_height="80dp"
+        />
+    <com.jlabs.peepaid.customcomponents.TextViewModernM
+        android:layout_width="wrap_content"
+        android:text="Kashyap Sharma"
+        android:textSize="16sp"
+        android:padding="1dp"
+        android:textStyle="bold"
+        android:id="@+id/username"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pic"/>
+    <com.jlabs.peepaid.customcomponents.TextViewModernM
+        android:layout_width="wrap_content"
+        android:text="test@jlabs.co"
+        android:textSize="12sp"
+        android:padding="1dp"
+        android:id="@+id/email_id"
+        android:textStyle="bold"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pic"/>
+
+</RelativeLayout>
+

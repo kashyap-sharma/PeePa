@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:id="@+id/zippy">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <com.pixelcan.inkpageindicator.InkPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dotDiameter="8dp"
+        android:paddingBottom="5dp"
+        app:dotGap="8dp"
+        android:layout_alignParentBottom="true"
+        app:animationDuration="320"
+        app:pageIndicatorColor="#32ffce"
+        app:currentPageIndicatorColor="#f15f2f"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/zippy1"
+        android:layout_below="@+id/zippy">
+        <com.jlabs.peepaid.customcomponents.TextViewModernM
+            android:layout_width="wrap_content"
+            android:text="Address"
+            android:padding="7dp"
+            android:id="@+id/add"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+        <com.jlabs.peepaid.customcomponents.TextViewModernM
+            android:layout_width="wrap_content"
+            android:paddingLeft="7dp"
+            android:id="@+id/full_add"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/frame_layout"
+            android:paddingBottom="7dp"
+          android:layout_below="@+id/add"
+            android:textSize="15sp"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="100dp"
+            >
+            <fragment
+
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="100dp"
+
+                android:layout_height="100dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+    <com.jlabs.peepaid.customcomponents.ButtonModarno
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="I AM HERE"
+        android:id="@+id/her_i_m"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/zippy1"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="10sp"
+        android:layout_below="@+id/her_i_m"
+        android:id="@+id/era"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="* to earn points"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/revi"
+        android:layout_below="@+id/era"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/rev"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Reviews"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rev"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/revi"
+        android:layout_above="@+id/write_re"
+        android:id="@+id/scr">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/mLayout"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.jlabs.peepaid.customcomponents.ButtonModarno
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Write a review"
+        android:textAllCaps="false"
+
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:id="@+id/write_re"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

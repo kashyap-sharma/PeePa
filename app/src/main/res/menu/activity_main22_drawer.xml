@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="ACTION">
+            <menu>
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Toilet" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Dustbin" />
+        <item
+            android:id="@+id/nav_redeem"
+            android:icon="@drawable/ic_menu_redeem"
+            android:title="Redeem" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Refer and Earn " />
+            </menu>
+        </item>
+    </group>
+
+
+
+
+
+    <item android:title="INFO">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Help and feedback" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About" />
+            <item
+                android:id="@+id/contactus"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact us" />
+        </menu>
+    </item>
+
+
+
+
+</menu>
